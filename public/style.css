@@ -1,0 +1,26 @@
+/* Basic layout */
+html,body,#app{height:100%;margin:0;font-family:Arial, Helvetica, sans-serif}
+#app{display:flex}
+aside#sidebar{width:320px;background:#f7f7f8;padding:12px;box-sizing:border-box;border-right:1px solid #ddd;overflow:auto}
+#main{flex:1;position:relative}
+#map{position:absolute;left:0;right:0;top:0;bottom:0}
+#overlay{position:absolute;left:0;top:0;pointer-events:none}
+
+#palette{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.palette-item{padding:8px;border:1px solid #ccc;background:white;border-radius:4px;cursor:grab}
+
+#scenario-controls{margin-top:8px}
+#scenario-controls input{width:100%}
+#controls{display:flex;gap:6px;margin-top:6px}
+#controls button{flex:1}
+
+#props-panel{margin-top:12px}
+#props-panel label{display:block;margin:6px 0}
+#props-panel input{width:100%;box-sizing:border-box}
+.form-actions{display:flex;gap:6px}
+
+/* Canvas entity styles (drawn on canvas) */
+.legend{position:absolute;right:10px;bottom:10px;background:rgba(255,255,255,0.8);padding:6px;border-radius:4px}
+
+/* Responsive */
+@media (max-width:800px){aside#sidebar{width:260px}}

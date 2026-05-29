@@ -1,0 +1,2 @@
+# mswork
+scenario editor / generator
